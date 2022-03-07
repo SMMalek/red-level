@@ -17,7 +17,7 @@ import Choice from './Choice.js'
     }
 
     return (
-      <div className="grid grid-cols-2 justify-around h-52 gap-8 mx-auto my-10 w-fit ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 w-full h-4/6 gap-4 mx-auto mb-10  w-fit ">
         {answers.map( answer =>
           <Choice
             text={answer}

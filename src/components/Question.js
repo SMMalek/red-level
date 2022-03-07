@@ -4,8 +4,8 @@ import React from 'react'
     const qidn = props.current+1
     const qid = "q" + qidn
     return (
-      <div className="m-auto px-2 py-2 ">
-        <h1 className="text-4xl font-bold m-auto text-center">{props.questions[qid].question}</h1>
+      <div className="flex m-auto px-2 h-2/6 mt-4">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold m-auto item-center text-center">{props.questions[qid].question}</h1>
       </div>
     );
   }

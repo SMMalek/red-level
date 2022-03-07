@@ -30,8 +30,8 @@ const App = () => {
       <Title />
       {start
         ?
-        <div>
-          <Main className="flex flex-col bg-gray-100" appList={appList} reInitialize={reInitialize}/>
+        <div className="h-full">
+          <Main appList={appList} reInitialize={reInitialize}/>
         </div>
         :
         <button className={startBtnStyle} onClick={initialize}>Start</button>

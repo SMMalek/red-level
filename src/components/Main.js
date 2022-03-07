@@ -17,7 +17,7 @@ import Results from './Results.js'
     const reInitialize = () => {props.reInitialize()} //reInitialize callback()
 
     let submitBtnStyle = ""// Submit Button acrivation and style
-    if(!list[0] || !list[1] || !list[2]){submitBtnStyle ="text-black/30 text-lg"}else{
+    if(!list[0] || !list[1] || !list[2]){submitBtnStyle ="text-black/30 text-lg w-15 m-auto transition-all ease-in-out duration-300"}else{
       submitBtnStyle = "text-lg w-15 m-auto font-semibold hover:text-redmenta transition-all ease-in-out duration-300"
     }
 
@@ -38,20 +38,24 @@ import Results from './Results.js'
     }
 
     return (
-      <div>
+      <div className="h-full">
         {!isSubmitted
           ?
-          <div className="flex flex-col h-[28rem] bg-gray-100">
-            <div className="flex flex-col m-auto h-full w-1/2 p-[10%] pt-[2%] border-2 border-dashed rounded-lg border-slate-300">
+            <div className="flex flex-col h-full md:w-4/6 m-auto">
+            <div className="flex flex-col  m-auto h-4/5  w-4/6 border-2 border-dashed rounded-lg border-slate-300">
               <Question questions={props.appList} current={current} />
               <Choices questions={props.appList} current={current} setAnswersList={setAnswersList} list={list}/>
             </div>
-            <div className="flex flex-row justify-between w-1/2 mx-auto mt-2 px-16">
-              <RollBtn text="Back" roll={roll} current={current} />
-              <RollBtn text="Next" roll={roll} current={current} />
+            <div className="flex flex-col w-4/6 h-1/5 mx-auto">
+              <div className="flex flex-row w-full justify-between px-8 mt-5 mb-2">
+                <RollBtn text="Back" roll={roll} current={current} />
+                <RollBtn text="Next" roll={roll} current={current} />
+              </div>
+              <div className="flex flex-col">
+                <Counter current={current} />
+                <button className={submitBtnStyle} disabled={disabled} onClick={handleClick}>Submit</button>
+              </div>
             </div>
-            <Counter current={current} />
-            <button className={submitBtnStyle} disabled={disabled} onClick={handleClick}>Submit</button>
           </div>
         :
         <Results listc={listc}  reInitialize={reInitialize}/>
