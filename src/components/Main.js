@@ -42,7 +42,7 @@ import Results from './Results.js'
         {!isSubmitted
           ?
             <div className="flex flex-col h-full md:w-4/6 m-auto">
-            <div className="flex flex-col  m-auto h-4/5  w-4/6 border-2 border-dashed rounded-lg border-slate-300">
+            <div className="flex flex-col  m-auto h-4/5  w-4/6">
               <Question questions={props.appList} current={current} />
               <Choices questions={props.appList} current={current} setAnswersList={setAnswersList} list={list}/>
             </div>

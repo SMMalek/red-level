@@ -26,15 +26,19 @@ const App = () => {
 
   return (
     <div className="flex flex-col bg-gray-100 h-screen">
-      <Nav />
-      <Title />
+      <div className="h-1/5">
+        <Nav />
+        <Title />
+      </div>
       {start
         ?
-        <div className="h-full">
+        <div className="h-4/5">
           <Main appList={appList} reInitialize={reInitialize}/>
         </div>
         :
-        <button className={startBtnStyle} onClick={initialize}>Start</button>
+        <div className="py-40 h-4/5">
+          <button className={startBtnStyle} onClick={initialize}>Start</button>
+        </div>
       }
     </div>
   )
