@@ -4,7 +4,6 @@ import Choice from './Choice.js'
   const Choices = props => {
 
     const [selectList, setSelectList] = useState()
-    let x = selectList
     const qidn = props.current+1
     const qid = "q" + qidn
     const answers = props.questions[qid].answers
