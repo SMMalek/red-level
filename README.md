@@ -8,7 +8,11 @@ Data is local in json file, fetched via AXIOS.
 Minimal css via TailwindCss.
 App is not build to be responsive, not adapted to mobile.
 
-## Get Up and Running
+## Netlify
+
+-- https://vigorous-yonath-31ea5c.netlify.app/ --
+
+## Get Up and Running locally
 
 Fork this repo, then clone the branch of your choice from your forked repo down to your computer:
 
