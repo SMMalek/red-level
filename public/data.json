@@ -1,0 +1,22 @@
+{
+  "questions": {
+    "q1": {
+      "id": "1",
+      "question": "What kind of animal is feline?",
+      "answers": ["Elephant", "Rhino", "Dog", "Cat"],
+      "correct_answer": "Cat"
+    },
+    "q2": {
+      "id": "2",
+      "question": "What is the capital of Germany?",
+      "answers": ["Munich", "Hamburg", "Düsseldorf", "Berlin"],
+      "correct_answer": "Berlin"
+    },
+    "q3": {
+      "id": "3",
+      "question": "What is the coldest planet in our solar system?",
+      "answers": ["Venus", "Jupiter", "Uranus", "Mars"],
+      "correct_answer": "Uranus"
+    }
+  }
+}
