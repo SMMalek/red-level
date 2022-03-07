@@ -47,7 +47,7 @@ import Results from './Results.js'
               <Choices questions={props.appList} current={current} setAnswersList={setAnswersList} list={list}/>
             </div>
             <div className="flex flex-col w-4/6 h-1/5 mx-auto">
-              <div className="flex flex-row w-full justify-between px-8 mt-5 mb-2">
+              <div className="flex flex-row w-full justify-between px-8 mt-1 mb-2">
                 <RollBtn text="Back" roll={roll} current={current} />
                 <RollBtn text="Next" roll={roll} current={current} />
               </div>
